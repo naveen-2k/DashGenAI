@@ -1,0 +1,103 @@
+[
+  {
+    "id": "sales-dashboard",
+    "name": "Sales Performance Review",
+    "description": "Standard business metrics including category breakdown, daily sales progression, and regional distribution.",
+    "widgets": [
+      {
+        "id": "sales-widget-1",
+        "title": "Daily Revenue Trend",
+        "chartType": "line",
+        "xAxisKey": "Date",
+        "yAxisKeys": ["Revenue"],
+        "csvFilename": "sales_performance.csv",
+        "size": "md",
+        "colorPalette": ["#3b82f6"]
+      },
+      {
+        "id": "sales-widget-2",
+        "title": "Sales Volume by Category",
+        "chartType": "bar",
+        "xAxisKey": "Category",
+        "yAxisKeys": ["Units"],
+        "csvFilename": "sales_performance.csv",
+        "size": "sm",
+        "aggregation": "sum",
+        "colorPalette": ["#10b981"]
+      },
+      {
+        "id": "sales-widget-3",
+        "title": "Profit Margin Distribution",
+        "chartType": "pie",
+        "xAxisKey": "Category",
+        "yAxisKeys": ["ProfitMargin"],
+        "csvFilename": "sales_performance.csv",
+        "size": "sm",
+        "aggregation": "avg",
+        "colorPalette": ["#f59e0b", "#ec4899", "#8b5cf6"]
+      }
+    ],
+    "createdAt": "2026-06-24T00:00:00Z",
+    "updatedAt": "2026-06-24T00:00:00Z"
+  },
+  {
+    "id": "stock-dashboard",
+    "name": "Financial Stock Market Analysis",
+    "description": "High-fidelity charting with stock pricing open/high/low/close candlesticks and traded volumes.",
+    "widgets": [
+      {
+        "id": "stock-widget-1",
+        "title": "Stock Candlestick Pricing",
+        "chartType": "candlestick",
+        "xAxisKey": "Date",
+        "yAxisKeys": ["Open", "High", "Low", "Close"],
+        "csvFilename": "stock_market_candlestick.csv",
+        "size": "lg",
+        "colorPalette": ["#10b981", "#ef4444"]
+      },
+      {
+        "id": "stock-widget-2",
+        "title": "Traded Volume Progression",
+        "chartType": "area",
+        "xAxisKey": "Date",
+        "yAxisKeys": ["Volume"],
+        "csvFilename": "stock_market_candlestick.csv",
+        "size": "md",
+        "colorPalette": ["#8b5cf6"]
+      }
+    ],
+    "createdAt": "2026-06-24T01:00:00Z",
+    "updatedAt": "2026-06-24T01:00:00Z"
+  },
+  {
+    "id": "sensor-dashboard",
+    "name": "IoT Sensor Monitoring",
+    "description": "Real-time industrial sensor correlations with high-density heatmaps and climate scatter coordinates.",
+    "widgets": [
+      {
+        "id": "sensor-widget-1",
+        "title": "Temperature vs Humidity Correlation",
+        "chartType": "scatter",
+        "xAxisKey": "Temperature",
+        "yAxisKeys": ["Humidity"],
+        "secondaryAxisKey": "Humidity",
+        "csvFilename": "sensor_metrics.csv",
+        "size": "md",
+        "colorPalette": ["#ec4899"]
+      },
+      {
+        "id": "sensor-widget-2",
+        "title": "Sensor Metric Grid",
+        "chartType": "heatmap",
+        "xAxisKey": "Temperature",
+        "yAxisKeys": ["CO2_Level"],
+        "secondaryAxisKey": "CO2_Level",
+        "csvFilename": "sensor_metrics.csv",
+        "size": "md",
+        "colorPalette": ["#3b82f6", "#10b981", "#f59e0b", "#ef4444"]
+      }
+    ],
+    "createdAt": "2026-06-24T02:00:00Z",
+    "updatedAt": "2026-06-24T02:00:00Z"
+  }
+]

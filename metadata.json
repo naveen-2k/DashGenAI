@@ -1,0 +1,6 @@
+{
+  "name": "Dynamic Dashboard Visualizer",
+  "description": "An interactive data dashboard powered by Gemini AI. Upload CSVs, select tables, and ask the AI Agent to automatically construct charts including scatter plots, heatmaps, and candlestick stock grids, synced across all devices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
